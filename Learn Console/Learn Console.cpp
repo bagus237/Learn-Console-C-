@@ -4,10 +4,32 @@
 #include <iostream>
 using namespace std;
 
+class encapsulation {
+public:
+	string Nama;
+	string NIM;
+	int nilaiku = 85;
+	void setNilai(int nilai) {
+		nilaiku = nilai;
+	}
+	int getNilai() {
+		return nilaiku;
+	}
+};
+
+
 int main()
 {
-	cout << "C++ Is Suck";
+	encapsulation bagus;
+	bagus.Nama = "Muhamad Bagus";
+	bagus.NIM = "1512500941";
+	//bagus.setNilai(100);
+	cout << "Nama = " << bagus.Nama << endl;
+	cout << "NIM = " << bagus.NIM << endl;
+	cout << "Nilai = " << bagus.getNilai();
 }
+
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
